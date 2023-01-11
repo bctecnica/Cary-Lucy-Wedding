@@ -199,7 +199,14 @@ header {
 }
 
 .wedding-date-img {
-  width: 70%;
+  width: 50%;
+  object-fit: contain;
+  margin: 0 auto;
+  padding-left: .5rem;
+}
+
+.wedding-date-img-chopped {
+  width: 40%;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -404,6 +411,11 @@ header {
 /* FAQ */
 
 /*Acco*/
+
+.emailing {
+  color: orange;
+  font-size: .7rem;
+}
 .ac-container {
   max-width: 400px;
 }
@@ -586,9 +598,11 @@ a > p {
 }
 
 .photo-text {
+  text-align: center;
   max-width: 80%;
   margin: 0 auto;
   font-size: 0.8rem;
+  padding-bottom: 2rem;
 }
 
 .photo-button {
@@ -638,6 +652,9 @@ a > p {
   }
   nav {
     margin-top: 0rem;
+  }
+  .modal-content {
+    width: 30%; /* Could be more or less, depending on screen size */
   }
   .nav-links a,
   .nav-links button {
