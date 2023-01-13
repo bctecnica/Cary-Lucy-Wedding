@@ -97,36 +97,9 @@ a {
   background-color: black;
   border-radius: 10px;
 }
-.nav-links a,
-.nav-links button {
-  margin-left: 1.6rem;
-}
-.nav-links a,
-.nav__ul li a {
-  display: inline-block;
-  position: relative;
-}
-.nav-links a:after,
-.nav__ul li a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: -0px;
-  left: 0;
-  background-color: grey;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-.nav-links a:hover:after,
-.nav__ul li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 /* side panel menu */
 .sidepanel {
-  height: 350px;
+  height: 380px;
   width: 0px;
   position: fixed;
   z-index: 1;
@@ -180,7 +153,7 @@ a {
 
 /* HEADER */
 header {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #fff;
   position: relative;
   width: 100%;
@@ -602,7 +575,15 @@ a > p {
   max-width: 80%;
   margin: 0 auto;
   font-size: 0.8rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.photo-text-bottom {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding-bottom: 6rem;
 }
 
 .photo-button {
@@ -625,6 +606,30 @@ a > p {
   outline: none;
 }
 
+#photo-button-side {
+margin-left: 2rem;
+margin-bottom: 1rem;
+padding: 10px 26px;
+  width: 150px;
+  height: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#photo-button-side::first-letter {
+  color: white;
+  }
+
 .photo-button.accept-btn:hover {
   background-color: white;
   box-shadow: 0px 15px 20px grey;
@@ -644,6 +649,9 @@ a > p {
     media queries 
 //////////////////*/
 @media screen and (min-width: 550px) {
+  .header-img {
+    margin-top: 18rem;
+  }
   .top {
     margin-top: 18rem;
   }
@@ -672,8 +680,6 @@ a > p {
   .pp-logo {
     max-width: 35px;
   }
-  header {
-  }
   .header-text {
     top: 46%;
     left: -6px;
@@ -683,87 +689,17 @@ a > p {
   .logo-container {
     margin-top: 1rem;
   }
-  .main-blob-svg1 {
-    transform: rotate(270deg) scale(0.4) translate(10%, -102%);
+  .modal-content {
+    margin: 20% auto; /* 15% from the top and centered */
   }
-  .main-blob-svg2 {
-    transform: rotate(160deg) scale(0.3) translate(65%, 90%);
+  .photo-text-bottom {
+    padding-bottom: 12rem;
   }
-  .sub-blob-svg3 {
-    transform: rotate(90deg) scale(0.2) translate(-40%, 170%);
-  }
-  .sub-blob-svg4 {
-    transform: rotate(90deg) scale(0.2) translate(15%, 220%);
-  }
-  .sub-blob-svg5 {
-    transform: rotate(90deg) scale(0.2) translate(10%, 200%);
-  }
-  .plantpot-container {
-    display: block;
-    height: 1020px;
-    margin-top: -7rem;
-  }
-  .plant-text {
-    grid-column: none;
-    margin: 0 auto;
-    margin-top: -2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .plant-img-container {
-    grid-column: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -2rem;
-    padding-right: 0rem;
-    transform: scale(0.6);
-  }
-  .blob-img {
-    top: 30px;
-    display: block;
-    width: 500px;
-  }
-  .plant-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: scale(0.5) translate(-100%, -100%);
-  }
-  .more {
-    margin-top: 0rem;
-    margin-left: 2rem;
-    margin-bottom: 3rem;
-    align-self: center;
-  }
-  .gallery {
-    row-gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-  }
-  #shop {
-    font-size: 1.6rem;
-  }
-  .wave-svg {
-    display: block;
-    margin-bottom: -0.1rem;
-    margin-top: 5rem;
-  }
-  .footer {
-    flex-direction: column;
-    padding-top: 2rem;
-    margin-top: 0rem;
-    background: linear-gradient(0deg, rgb(247, 206, 39), rgb(233, 8, 132));
+  .outline-btn {
+    margin-bottom: 10rem;
   }
   .left {
     margin-left: 0rem;
-  }
-  .footer__addr {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3em;
-  }
-  .footer-blob {
-    display: none;
   }
   .nav__title {
     margin-top: 1rem;
@@ -773,20 +709,5 @@ a > p {
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
-  }
-  .footer__nav {
-    text-align: center;
-    margin-left: 1rem;
-  }
-  .nav__ul a {
-    color: white;
-  }
-  .nav__ul-grid {
-    max-width: 200px;
-    margin: auto;
-  }
-  .nav__ul-grid > * {
-    transform: scale(0.9);
-    filter: drop-shadow(2px 2px 4px rgba(99, 99, 99, 0.3));
   }
 }

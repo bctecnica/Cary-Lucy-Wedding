@@ -24,8 +24,6 @@
       <div id="passwordModal" class="modal">
         <!-- Modal content -->
         <div id="modal-content" class="modal-content">
-          <!-- <img src="./images/password-orange.png" class="password-orange1" alt="orange">
-        <img src="./images/password-orange.png" class="password-orange2" alt="orange"> -->
           <span class="close">&times;</span>
           <p class="enter-password">Please enter the password:</p>
           <input type="password" id="passwordInput" />
@@ -89,10 +87,10 @@
       // When the user clicks the submit button
       submitButton.onclick = function () {
         // Get the password entered by the user
-        var password = document.getElementById("passwordInput").value;
+        var password = document.getElementById("passwordInput").value.toLowerCase();
 
         // Check if the password is correct
-        if (password == "password") {
+        if (password === "wedding2023") {
           // If the password is correct, open the link
           window.location = "guestInfo.html";
         } else {
