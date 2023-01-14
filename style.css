@@ -34,21 +34,21 @@ h4 {
 .overlay-top {
   width: 100%;
   position: fixed;
-  top: -0.8rem;
+  top: -.9rem;
   left: 0;
   z-index: 99;
 }
 .overlay-bl {
   position: fixed;
-  left: -.6rem;
-  bottom: -.4rem;
+  left: -.7rem;
+  bottom: -.8rem;
   width: 35%;
   z-index: 99;
 }
 .overlay-br {
   position: fixed;
-  bottom: -.1rem;
-  right: -.9rem;
+  bottom: 0;
+  right: -1rem;
   width: 40%;
   z-index: 99;
 }
