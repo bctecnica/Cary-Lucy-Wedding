@@ -33,22 +33,22 @@ h4 {
 }
 .overlay-top {
   width: 100%;
-  position: absolute;
-  top: -0.6rem;
+  position: fixed;
+  top: -0.8rem;
   left: 0;
   z-index: 99;
 }
 .overlay-bl {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  position: fixed;
+  left: -.6rem;
+  bottom: -.4rem;
   width: 35%;
   z-index: 99;
 }
 .overlay-br {
-  position: absolute;
-  bottom: 0rem;
-  right: 0;
+  position: fixed;
+  bottom: -.1rem;
+  right: -.9rem;
   width: 40%;
   z-index: 99;
 }
@@ -512,7 +512,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem 0rem;
-  width: 92%;
+  width: 100%;
   margin: auto;
 }
 .location-card {
@@ -639,7 +639,7 @@ padding: 10px 26px;
 
 .bctecnica {
   margin-top: -0.2rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.8rem;
   display: block;
   text-align: center;
   color: orange;
@@ -649,6 +649,27 @@ padding: 10px 26px;
     media queries 
 //////////////////*/
 @media screen and (min-width: 550px) {
+  .overlay-top {
+    width: 100%;
+    position: absolute;
+    top: -0.6rem;
+    left: 0;
+    z-index: 99;
+  }
+  .overlay-bl {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    z-index: 99;
+  }
+  .overlay-br {
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    width: 40%;
+    z-index: 99;
+  }
   .header-img {
     margin-top: 18rem;
   }
