@@ -6,10 +6,8 @@
 }
 html {
   scroll-behavior: smooth;
-  background-color: rgb(250, 250, 250);
 }
 body {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   max-width: 860px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -649,6 +647,12 @@ padding: 10px 26px;
     media queries 
 //////////////////*/
 @media screen and (min-width: 550px) {
+  html {
+  background-color: rgb(250, 250, 250);
+}
+body {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
   .overlay-top {
     width: 100%;
     position: absolute;
