@@ -82,11 +82,11 @@ h4 {
     opacity: 0;
   }
   10% {
-    bottom: 50px;
+    bottom: 75px;
     opacity: 1;
   }
   90% {
-    bottom: 50px;
+    bottom: 75px;
     opacity: 1;
   }
   100% {
