@@ -624,7 +624,7 @@ a > p {
   max-width: 80%;
   margin: 0 auto;
   font-size: 0.8rem;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 
 .photo-button {
@@ -676,6 +676,27 @@ a > p {
   box-shadow: 0px 15px 20px grey;
   color: black;
   transform: translateY(-7px);
+}
+
+.drive-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 10rem;
+  width: 40%;
+  padding: .5rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+}
+
+.drive-img:hover {
+scale: 1.1;
+}
+
+.drive-img img {
+  width: 80%;
 }
 
 .bctecnica {
@@ -761,7 +782,7 @@ a > p {
     margin: 20% auto; /* 15% from the top and centered */
   }
   .photo-text-bottom {
-    padding-bottom: 12rem;
+    margin-bottom: 1rem;
   }
   .outline-btn {
     margin-bottom: 10rem;
@@ -777,5 +798,18 @@ a > p {
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
+  }
+
+  .drive-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: 20%;
+    padding: .5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
   }
 }
