@@ -707,6 +707,50 @@ scale: 1.1;
   color: orange;
 }
 
+.food-menu {
+  text-align: center;
+  padding: 24px;
+}
+
+.who {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#namesDropdown {
+  margin-bottom: 1.8rem;
+}
+
+.menu-title {
+  margin-top: 6.4rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+hr {
+  width: 60%;
+  margin: 1.6rem auto;
+}
+
+.food-menu h3{
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.food-menu h5{
+font-weight: 300;
+}
+
+.food-menu h3,
+.menu-title{
+  font-family: "Great Vibes", cursive;
+  font-weight: 300;
+}
+
+
+
 /* ////////////////
     media queries 
 //////////////////*/
