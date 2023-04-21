@@ -712,18 +712,19 @@ scale: 1.1;
   padding: 24px;
 }
 
-.who {
-  font-weight: 400;
-  margin-bottom: 1rem;
+.food-container {
+  min-height: 100vh;
+  width: 100%;
 }
 
 #namesDropdown {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.2rem;
 }
 
 .menu-title {
+  font-size: 1.8rem;
   margin-top: 6.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -734,7 +735,7 @@ hr {
 }
 
 .food-menu h3{
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
   font-size: 1.4rem;
   font-style: italic;
 }
@@ -748,8 +749,6 @@ font-weight: 300;
   font-family: "Great Vibes", cursive;
   font-weight: 300;
 }
-
-
 
 /* ////////////////
     media queries 

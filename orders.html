@@ -25,20 +25,21 @@
       src="images/oranges-top-removebg-preview.png"
       alt="overlay-top"
     />
-    <div class="food-menu">
-      <h2 class="menu-title">Menu Choices</h2>
-      <h6 class="who">who's menu choices would you like to see:</h6>
-      <select id="namesDropdown" onchange="updateChoices()">
-        <!-- Options will be populated using JavaScript -->
-      </select>
-      <h3>Starter</h3>
-      <h5 id="starter"></h5>
-      <hr />
-      <h3>Main</h3>
-      <h5 id="main"></h5>
-      <hr />
-      <h3>Dessert</h3>
-      <h5 id="dessert"></h5>
+    <div class="food-container">
+      <div class="food-menu">
+        <h2 class="menu-title">Menu Choices</h2>
+        <select id="namesDropdown" onchange="updateChoices()">
+          <!-- Options will be populated using JavaScript -->
+        </select>
+        <h3>Starter</h3>
+        <h5 id="starter"></h5>
+        <hr />
+        <h3>Main</h3>
+        <h5 id="main"></h5>
+        <hr />
+        <h3>Dessert</h3>
+        <h5 id="dessert"></h5>
+      </div>
     </div>
     <img
       class="overlay-bl"
@@ -54,11 +55,9 @@
     <script>
       const orders = [
         {
-          name: "Make a selection",
-          starterChoices:
-            "",
-          mainChoices:
-            "",
+          name: "Select A Guest",
+          starterChoices: "",
+          mainChoices: "",
           dessertChoices: "",
         },
         {
