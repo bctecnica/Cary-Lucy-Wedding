@@ -689,6 +689,7 @@ a > p {
   width: 40%;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all .3s;
+  border: orange .5px solid;
 }
 
 .drive-img:hover {
