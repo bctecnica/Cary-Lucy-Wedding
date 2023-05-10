@@ -543,6 +543,10 @@ header {
   height: 250px;
 }
 
+.ac-container input:checked ~ article.ac-xl-large {
+  height: 300px;
+}
+
 /* GOOGLE MAPS */
 
 .locations {
